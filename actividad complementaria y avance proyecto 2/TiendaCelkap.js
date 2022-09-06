@@ -14,12 +14,13 @@ class Producto {
     this.precioIva = iva + this.precio;
     return this.precioIva;
   }
+  
   sumaTotal(){
     let total = this.precioIva*this.cantidad;
    return total;
   }
 }
-function ordenarPrecio(){
+ordenarPrecio =>{
     allProducts.sort((a, b) => {
     return a.precio - b.precio;
    });
