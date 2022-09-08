@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap');
+
+
+
+h1,h2,h3,h4,h5{
+	color: black;
+	font-family: 'Comfortaa', cursive;
+	margin: 5px 0px;
+}
+h1,h2,h3,h4,h5:first-letter{
+  text-transform: uppercase;
+}
+p:first-letter{
+	text-transform: uppercase;
+ 	font-size: 1.2em;
+ 	font-weight: 600;
+ }
+ 
+	.logo img{
+     width: 200px;
+     height: 70px;
+   }
+   
+   .regCarro{
+   		display: flex;
+   	    align-items:center;
+   	    justify-content: flex-end;
+   }
+   .regCarro img:hover{
+   		transform: skew(-20deg);
+		cursor: pointer;
+		transition: transform 3s;
+   }
+    .regCarro a{
+   		display: flex;
+   	    align-items:center;
+   	    justify-content: space-between;
+   	    text-decoration: none;
+         color: #5B5959;
+         padding: 10px 10px;
+   }
+   .regCarro a:hover{
+	color: black;
+	font-weight: 600;
+     }
+     #botonera{
+	  background-color:rgba(252, 170, 16,.8); 
+     }
+     #botonera div ul li a:hover{
+	  background-color:rgba(252, 150, 19,.9); 
+     }
+	.encabezadoCajagris{
+		background-color: gray;
+		color:white;
+		height: 30px;
+	}
+
+	.redesExtras{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+	}
+	   .redes img{
+	      text-decoration: none;
+	      padding: 10px;
+		}
+	  .redes img:hover{
+		  transform: scale(1.2);
+		  cursor: pointer;
+		  transition: transform 1s;
+		}
+	 
+
+    #productos h1,
+    #productos h2{
+    	text-transform: uppercase;
+		font-size: 1.5rem;
+		text-align: center;
+		padding: 15px 0;
+		background-color: orange;
+		font-family: Roboto, sans-serif;
+    }
+	#productos .masVendidos{
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-evenly;
+	    background-color: rgba(242, 242, 242, 1);
+	    
+	}
+		#productos .masVendidos figure{
+			text-align: center;
+			padding: 20px 0px;
+		}
+			#productos .masVendidos figure img:hover{
+				transform: scale(1.2);
+				cursor: pointer;
+				transition: transform 1s;
+			}
+			
+			#productos .masVendidos figure figcaption{
+				font-size: 2rem;
+				color: black;
+				padding: 10px 0;
+				background-color: white;
+			}
+
+			#productos .masVendidos p.price{
+				color: black;
+				padding-bottom: 10px;
+				background-color: white;
+			}
+
+			#productos .masVendidos a.btn{
+				width:200px;
+				height:50px;
+				background-color: red;
+				color:white;
+				text-align: center;
+				text-decoration: none;
+				border-radius: 5px;
+				margin-left: 50px;
+				font-size: 1rem;
+				display: flex;
+				justify-content: center;
+				align-items: center; 
+				
+			}
+
+		
+
+
