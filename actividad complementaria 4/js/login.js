@@ -41,6 +41,7 @@ for(const nu of nameUsers){
 }
 function login(event) {
   event.preventDefault();
+  localStorage.removeItem('token');
   let Username = formulario.username.value;
   let Password = formulario.password.value;
   let Conectado= formulario.conectado.value;
@@ -50,19 +51,15 @@ function login(event) {
    if(isAuth && isUser){    
      window.location.href = "../index.html";
    }else{
-      for(const us of usuariosRegistrados){
-    
+      for(const us of usuariosRegistrados){   
         if(Username == us.username && Password == us.password){
            us.conectado=Conectado;
            const token = generateToken(Username,Password,Conectado);
            localStorage.setItem("token", token); 
            window.location.href = "../index.html";  
-        }else{
-          alert("no existe esa cuenta");
-          break;
         }
-
-      }    
+      }   
+      
   }
 }
 
