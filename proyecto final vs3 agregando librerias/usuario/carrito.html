@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tienda de Celulares y electronicos CelKap</title>
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container-fluid p-2 m-2">
+			<div class="d-flex align-items-start justify-content-space-around">
+				<a class="" href="../index.html">Pagina principal</a>
+			</div>
+		</div>     
+	</header>
+ 
+	<main>
+      <div class="container-fluid p-2 m-2">
+		<div class="row d-flex align-items-center justify-content-space-around">
+		  <h1 class="text-center pb-1">Carrito de compras</h1>
+			<div class="container-fluid pt-3 col-lg-8 col-md-7 col-sm-10">
+			   
+			   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" 
+				  aria-hidden="true">
+			          <div class="modal-dialog">
+			            <div class="modal-content">
+			              <div class="modal-header">
+			                <h5 class="modal-title" id="exampleModalLabel">Añadir producto</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                              <div class="modal-body">
+				                <form id="addProduct" class="d-flex align-items-start justify-content-center flex-column">
+				                  <div class="field p-1 m-1 ">
+				                    <label for="productName"> Nombre </label>
+				                    <input type="text" placeholder="Nombre" name="productName" />
+				                  </div>
+				                  <div class="field p-1 m-1">
+				                    <label for="productPrice"> Precio </label>
+				                    <input type="number" placeholder="precio" name="productPrice" />
+				                  </div>
+				                  <div class="field p-1 m-1">
+				                    <label for="productQty"> Cantidad </label>
+				                    <input type="number" placeholder="cantidad" name="productQty"/>
+				                  </div>
+				                </form>
+                              </div>
+                         <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="agregarProductos()">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table id="productsTable" class="table table-success table-striped-columns">
+			    <thead class="text-center">
+						    <tr>
+						      <th scope="col">ID</th>
+						      <th scope="col">Nombre</th>
+						      <th scope="col">Cantidad</th>
+						      <th scope="col">Precio (IVA Incluido)</th>						      
+						      <th scope="col"></th>
+						    </tr>
+				  </thead>
+				 <tbody class="text-center">
+				 </tbody>
+						  <tr>
+						  	<th></th>
+						  	<th></th>
+						  	<th scope="row" class="text-end">Precio total</th>
+						  	<td id="Total" class="text-center"></td>
+						  </tr>
+			</table>
+		
+	</main>
+
+	<footer>
+      
+	</footer>
+	 <script src="../js/bootstrap.min.js"></script>
+   <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="../js/sweetalert.min.js"></script>
+   <script src="../js/maingeneric.js"></script>
+   <script src="../js/arraysProductos.js"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+</html>
